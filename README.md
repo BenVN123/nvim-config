@@ -1,1 +1,1 @@
-# nvim-config
+# my nvim is better than urs
