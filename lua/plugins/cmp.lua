@@ -7,16 +7,6 @@ return {
 			"hrsh7th/vim-vsnip", -- Snippet support
 			"hrsh7th/cmp-vsnip", -- Snippet completions
 		},
-		opts = {
-			formatters_by_ft = {
-				python = { "black" }, -- Example formatter for Python
-				c = { "clang-format" }, -- Example formatter for C
-				lua = { "stylua" },
-			},
-
-			format_on_save = true, -- Enable auto-formatting on save
-			lsp_fallback = true, -- Use LSP formatter as a fallback if no formatter is configured
-		},
 		config = function()
 			local cmp = require("cmp")
 
