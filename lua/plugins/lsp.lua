@@ -17,7 +17,10 @@ return {
 				})
 			end)
 
-			require("lazy-lsp").setup({})
+			require("lazy-lsp").setup({
+				-- TODO: remove once my PR to remove these deprecated servers is merged :(
+				excluded_servers = { "bufls", "ruff_lsp" },
+			})
 		end,
 	},
 }
