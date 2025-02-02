@@ -19,6 +19,8 @@ return {
 
 			require("lazy-lsp").setup({
 				preferred_servers = {
+					c = { "ccls" },
+					cpp = { "ccls" },
 					python = { "ruff" },
 				},
 			})
