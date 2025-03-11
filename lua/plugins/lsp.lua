@@ -22,8 +22,18 @@ return {
 					c = { "ccls" },
 					cpp = { "ccls" },
 					python = { "ruff" },
+					rust = { "rust-analyzer" },
 				},
 			})
+
+			local lspconfig = require("lspconfig")
+			local servers = require("mason-lspconfig").get_installed_servers()
+
+			for _, server in ipairs(servers) do
+				lspconfig[server].setup({
+					on_attach = function(_, bufnr) end,
+				})
+			end
 		end,
 	},
 }
