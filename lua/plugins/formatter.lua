@@ -4,8 +4,8 @@ return {
 		opts = {
 			formatters_by_ft = {
 				python = { "isort", "black" },
-				--				c = { "clang-format" },
-				--				cpp = { "clang-format" },
+				c = { "clang-format" },
+				cpp = { "clang-format" },
 				lua = { "stylua" },
 				go = { "gofmt" },
 				rust = { "rustfmt" },

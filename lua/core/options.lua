@@ -6,6 +6,4 @@ vim.opt.shiftwidth = 4
 
 vim.opt.statusline = " %f %m %= %l:%c ᕕ( ᐛ )ᕗ "
 
--- vim.cmd.colorscheme("catppuccin")
 vim.cmd.colorscheme("rose-pine")
--- vim.cmd.colorscheme("rose-pine-moon")
